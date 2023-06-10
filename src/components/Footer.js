@@ -1,25 +1,14 @@
 import React from 'react'
 import Socials from '../utils/Socials';
-import { socialLinks } from '../data/data';
+import { footerLinks, socialLinks } from '../data/data';
+import Links from '../utils/Links';
 
 const Footer = () => {
   return (
     <footer className="section footer">
       <ul className="footer-links">
-        <li>
-          <a href="#home" className="footer-link">home</a>
-        </li>
-        <li>
-          <a href="#about" className="footer-link">about</a>
-        </li>
-        <li>
-          <a href="#services" className="footer-link">services</a>
-        </li>
-        <li>
-          <a href="#featured" className="footer-link">featured</a>
-        </li>
+      <Links pageLinks={footerLinks} />
       </ul>
-      
       <Socials socialLinks={socialLinks} className="footer-icon" containerClass="footer-icons"/>
       
       
