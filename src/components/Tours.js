@@ -1,9 +1,6 @@
 import React from 'react';
 
 import Title from '../utils/Title';
-
-import tourFive from '../Images/tour-5.jpeg';
-import tourSix from '../Images/tour-6.jpeg';
 import { availableTour } from '../data/data';
 
 const Tours = () => {
@@ -24,9 +21,9 @@ const Tours = () => {
                             <div className="tour-info">
                                 <h4>{title}</h4>
                                 <p>
-                                {text}
+                                    {text}
                                 </p>
-                                <div className="tour-footer">
+                                <div className="tour-footer" >
                                 <p>
                                     <span><i className="fas fa-map"></i></span> {location}
                                 </p>
